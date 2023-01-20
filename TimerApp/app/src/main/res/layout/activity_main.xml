@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="75dp"
+        android:textColor="#FFFCFC"
+        android:textStyle=""
+        android:text="TimerApp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:hint="  Yapacağınız hareketin adını giriniz"
+        android:layout_margin="10dp"
+        android:id="@+id/bilgitext"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:drawableStart="@drawable/custom_info"
+        android:background="@drawable/custom_input"
+        />
+
+
+    <EditText
+        android:hint="  Saniyeyi Giriniz"
+        android:layout_margin="10dp"
+        android:id="@+id/timetext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:drawableStart="@drawable/custom_time"
+        android:inputType="number"
+        android:padding="5dp"
+        android:background="@drawable/custom_input"
+        />
+    <EditText
+        android:hint="  Tekrar sayısını giriniz"
+        android:layout_margin="10dp"
+        android:id="@+id/tekrarsayisiText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:drawableStart="@drawable/custom_refresh"
+        android:padding="5dp"
+        android:background="@drawable/custom_input"
+        />
+
+    <EditText
+        android:hint="  Mola Süresini giriniz"
+        android:layout_margin="10dp"
+        android:id="@+id/molaText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:drawableStart="@drawable/custom_mola"
+        android:padding="5dp"
+        android:background="@drawable/custom_input"
+        />
+
+
+    <LinearLayout
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+
+            android:clickable="true"
+            android:textColor="#DF8282"
+            android:textStyle="bold"
+            android:id="@+id/hareketEklebtn"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text="HAREKET EKLE"
+            android:background="@drawable/custom_btn1"
+            />
+
+        <Button
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textColor="#59B6B6"
+            android:id="@+id/baslabtn"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:text="Spora Başla"
+            android:background="@drawable/custom_btn2"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="20dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:background="@drawable/custom_input">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textColor="#0B7A16"
+        android:id="@+id/veritemizle"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:text="Hepsini Sil"
+        android:background="@drawable/custom_btn2"
+        />
+
+
+
+</LinearLayout>
+</ScrollView>
